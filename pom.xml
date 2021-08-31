@@ -23,7 +23,7 @@
 
 				<executions>
 					<execution>
-						<id>sequence</id>
+						<id>basic</id>
 						<phase>package</phase>
 						<goals>
 							<goal>mdoc</goal>
@@ -37,6 +37,22 @@
 							<server>http://www.plantuml.com/plantuml/png/</server>
 						</configuration>
 					</execution>
+					<execution>
+						<id>templates</id>
+						<phase>package</phase>
+						<goals>
+							<goal>mdoc</goal>
+						</goals>
+						<configuration>
+							<input>src/main/java</input>
+							<output>doc</output>
+							<model>sequence</model>
+							<type>markdown</type>
+							<clazz>fi.pp.testmaterial.templates.MyTemplateUser</clazz>
+							<server>http://www.plantuml.com/plantuml/png/</server>
+						</configuration>
+					</execution>
+					
 
 				</executions>
 			</plugin>
