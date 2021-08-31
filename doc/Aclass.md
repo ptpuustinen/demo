@@ -11,8 +11,7 @@ Parametrit
 
 * String whatEver
 
-
-![findInt](http://www.plantuml.com/plantuml/png/NOn13e0W30JllA8Vu0F6cC3DPrJKI8JMj73mzshWv75s9gjdf0i5CsGc3eTmtg18tGo6mW9E8vwePk5AAyeDBYHKDO6f22Vm3Ni6Tke137kaTQPYEh_6TmC_DLhx__ccPXy0)
+![findInt](http://www.plantuml.com/plantuml/png/TSmn3i8m30NGtQVm24CkW52bTcFc16wIqgYDZMnNWjj3rKn8ZF__fszBuISfLQp24cULcj5rop2Nb74IyL5UGD55iRT22ncCid4YVMCVLpA3AEmgAmv7R0n3rm1UfiBfndwwknP-dA7rNp4qWN_8DOJVtxqwrWy0)
 
 
 Palautusarvo
