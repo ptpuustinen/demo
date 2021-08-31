@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fi.pp.demo</groupId>
+	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>demo-material</artifactId>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>fi.pp.meta</groupId>
+				<artifactId>mdoc-maven-plugin</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+
+				<executions>
+					<execution>
+						<id>sequence</id>
+						<phase>package</phase>
+						<goals>
+							<goal>mdoc</goal>
+						</goals>
+						<configuration>
+							<input>src/main/java</input>
+							<output>doc</output>
+							<model>sequence</model>
+							<type>markdown</type>
+							<clazz>fi.pp.a.Aclass</clazz>
+							<server>http://www.plantuml.com/plantuml/png/</server>
+						</configuration>
+					</execution>
+
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
