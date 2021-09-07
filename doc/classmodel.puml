@@ -1,0 +1,40 @@
+@startuml
+
+skinparam monochrome true
+class MyTemplateUser {
+
+    MyTemplate<Integer> myt
+    Integer findInt()
+}
+
+
+class Aclass {
+
+    Bclass bc
+    int findInt(null whatEver)
+}
+
+Aclass --> Bclass
+
+class Main {
+
+    void main(null args)
+}
+
+
+class MyTemplate {
+
+    void setValue(null whatEver)
+    T find(null t)
+}
+
+
+class Bclass {
+
+    int findInt(null something)
+    int findInt(null somthing)
+    double findInt(null something)
+}
+
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+skinparam monochrome true
+hide footbox
+actor Asiakas
+boundary MyTemplateUser
+control MyTemplate
+Asiakas -> MyTemplateUser : findInt()
+MyTemplateUser -> MyTemplate : find(T)
+MyTemplateUser <-- MyTemplate : T
+Asiakas <-- MyTemplateUser : Integer
+@enduml

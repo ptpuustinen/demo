@@ -23,7 +23,22 @@
 
 				<executions>
 					<execution>
-						<id>basic</id>
+						<id>basic-puml</id>
+						<phase>package</phase>
+						<goals>
+							<goal>mdoc</goal>
+						</goals>
+						<configuration>
+							<input>src/main/java</input>
+							<output>doc</output>
+							<model>sequence</model>
+							<type>puml</type>
+							<clazz>fi.pp.a.Aclass</clazz>
+							<server>http://www.plantuml.com/plantuml/png/</server>
+						</configuration>
+					</execution>
+					<execution>
+						<id>basic-md</id>
 						<phase>package</phase>
 						<goals>
 							<goal>mdoc</goal>
@@ -34,6 +49,50 @@
 							<model>sequence</model>
 							<type>markdown</type>
 							<clazz>fi.pp.a.Aclass</clazz>
+							<server>http://www.plantuml.com/plantuml/png/</server>
+						</configuration>
+					</execution>
+					<execution>
+						<id>template-sequence</id>
+						<phase>package</phase>
+						<goals>
+							<goal>mdoc</goal>
+						</goals>
+						<configuration>
+							<input>src/main/java</input>
+							<output>doc</output>
+							<model>sequence</model>
+							<type>markdown</type>
+							<clazz>fi.pp.testmaterial.templates.MyTemplateUser</clazz>
+							<server>http://www.plantuml.com/plantuml/png/</server>
+						</configuration>
+					</execution>
+					<execution>
+						<id>template-markdown</id>
+						<phase>package</phase>
+						<goals>
+							<goal>mdoc</goal>
+						</goals>
+						<configuration>
+							<input>src/main/java</input>
+							<output>doc</output>
+							<model>sequence</model>
+							<type>puml</type>
+							<clazz>fi.pp.testmaterial.templates.MyTemplateUser</clazz>
+							<server>http://www.plantuml.com/plantuml/png/</server>
+						</configuration>
+					</execution>
+					<execution>
+						<id>clazz</id>
+						<phase>package</phase>
+						<goals>
+							<goal>mdoc</goal>
+						</goals>
+						<configuration>
+							<input>src/main/java</input>
+							<output>doc</output>
+							<model>class</model>
+							<type>puml</type>
 							<server>http://www.plantuml.com/plantuml/png/</server>
 						</configuration>
 					</execution>
