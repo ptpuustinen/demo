@@ -38,7 +38,7 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>basic-md</id>
+						<id>basic-markdown</id>
 						<phase>package</phase>
 						<goals>
 							<goal>mdoc</goal>
@@ -83,7 +83,7 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>clazz</id>
+						<id>class-puml</id>
 						<phase>package</phase>
 						<goals>
 							<goal>mdoc</goal>
@@ -93,6 +93,20 @@
 							<output>doc</output>
 							<model>class</model>
 							<type>puml</type>
+							<server>http://www.plantuml.com/plantuml/png/</server>
+						</configuration>
+					</execution>
+					<execution>
+						<id>class-markdown</id>
+						<phase>package</phase>
+						<goals>
+							<goal>mdoc</goal>
+						</goals>
+						<configuration>
+							<input>src/main/java</input>
+							<output>doc</output>
+							<model>class</model>
+							<type>markdown</type>
 							<server>http://www.plantuml.com/plantuml/png/</server>
 						</configuration>
 					</execution>
